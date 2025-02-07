@@ -10,18 +10,17 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  padding: 0 20px;
 }
 
 .logo {
   color: white;
   font-size: 28px;
-  margin: 10px 15px;
 }
 .nav-links {
   font-size: 18px;
   display: flex;
   gap: 20px;
-  margin: 10px 15px;
 }
 .nav-links a {
   text-decoration: none;
@@ -48,13 +47,6 @@
 span {
   color: darkmagenta;
 }
-.second-page {
-  padding-top: 30px;
-  background-color: whitesmoke;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-}
 .page-heading {
   font-size: 60px;
 }
@@ -62,38 +54,9 @@ span {
   font-size: 28px;
   padding-bottom: 30px;
 }
-
-.card {
-  padding-top: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 10px 10px;
-  transition: 0.3s ease-in-out;
-}
-.one {
-  height: 170px;
-}
-.two {
-  height: 180px;
-}
-
-.three {
-  height: 200px;
-}
-.four {
-  height: 200px;
-}
-.one,
-.two,
-.three {
-  background-color: #a9a9a9;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-.card h3 {
-  font-size: 28px;
-  color: #000000;
+.row {
+  width: 100%;
+  padding: 30px;
 }
 
 .card:hover {
@@ -114,24 +77,24 @@ span {
   gap: 20px;
   margin-left: 15px;
 }
-.third-page {
+.third-pages {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-/* .About {
-    display: flex;
-    text-align: center;
-    background: #808080;
-  }
-  .About h3 {
-    font-size: 40px;
-    font-weight: bold;
-    color: darkmagenta;
-  }
-  .about-disc {
-    padding-top: 150px;
-  } */
+.owner img {
+  width: 400px;
+  height: 400px;
+}
+.about-disc {
+  padding: 50px;
+}
+.about-disc h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: darkmagenta;
+}
+
 .About p {
   color: rgb(0, 0, 0);
   padding-top: 20px;
@@ -161,28 +124,21 @@ footer {
   text-align: center;
   height: 60px;
 }
-footer h1 {
-  padding-top: 20px;
-  text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 28px;
+p {
+  font: 18px;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 @media screen and (max-width: 480px) {
   .logo {
     display: none;
   }
-  .nav-bar {
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 20px 15px;
-    text-align: center;
-    font-size: 20px;
-    display: flex;
-    gap: 20px;
-    /* margin: 10px 15px; */
-  }
+
   .first-page h3 {
     /* text-align: center; */
 
@@ -192,52 +148,13 @@ footer h1 {
     color: darkmagenta;
   }
 
-  .second-page {
-    padding-top: 30px;
-    background-color: whitesmoke;
-    width: 100%;
-    height: 880px;
-    text-align: center;
-  }
-  .page-heading {
-    font-size: 60px;
-  }
-  .second-page h3 {
-    font-size: 20px;
-    padding-bottom: 30px;
-  }
-  .one {
-    height: 250px;
-  }
-  .two {
-    height: 250px;
-  }
-
-  .three {
-    height: 280px;
-  }
-  .four {
-    height: 280px;
-  }
-  .card p {
-    /* padding-top: 5px; */
-    font-size: 16px;
-    color: white;
-  }
-  .flex-1 {
-    display: block;
-    /* gap: 20px  ; */
-  }
-  .flex-2 {
-    display: block;
-    /* gap: 20px  ; */
-    margin-left: 15px;
-  }
-
-  .third-page {
+  .third-pages {
     flex-direction: column;
   }
-  .owner {
-    margin-top: 140%;
+  .four-page {
+    height: 65vh;
+  }
+  footer {
+    margin-top: -270px;
   }
 }
